@@ -4,7 +4,8 @@ const { Client, LocalAuth } = require('whatsapp-web.js');
 const client = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: { 
-        headless: false 
+        headless: false,
+        executablePath: 'F:\\whatsapp-agent\\chrome\\win64-144.0.7500.0\\chrome-win64\\chrome.exe'
     }
 });
 
